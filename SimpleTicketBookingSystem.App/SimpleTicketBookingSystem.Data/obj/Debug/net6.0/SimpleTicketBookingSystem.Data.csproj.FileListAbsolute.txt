@@ -1,0 +1,15 @@
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\bin\Debug\net6.0\SimpleTicketBookingSystem.Data.deps.json
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\bin\Debug\net6.0\SimpleTicketBookingSystem.Data.dll
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\bin\Debug\net6.0\SimpleTicketBookingSystem.Data.pdb
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\bin\Debug\net6.0\SimpleTicketBookingSystem.Interfaces.dll
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\bin\Debug\net6.0\SimpleTicketBookingSystem.Interfaces.pdb
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.csproj.AssemblyReference.cache
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.AssemblyInfoInputs.cache
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.AssemblyInfo.cs
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.csproj.CoreCompileInputs.cache
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.csproj.CopyComplete
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.dll
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\refint\SimpleTicketBookingSystem.Data.dll
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\SimpleTicketBookingSystem.Data.pdb
+E:\C#_WORK\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.Data\obj\Debug\net6.0\ref\SimpleTicketBookingSystem.Data.dll

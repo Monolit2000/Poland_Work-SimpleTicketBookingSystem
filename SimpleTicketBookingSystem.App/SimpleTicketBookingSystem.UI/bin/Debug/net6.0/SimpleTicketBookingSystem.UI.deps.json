@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SimpleTicketBookingSystem.UI/1.0.0": {
+        "dependencies": {
+          "SimpleTicketBookingSystem.Data": "1.0.0",
+          "SimpleTicketBookingSystem.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "SimpleTicketBookingSystem.UI.dll": {}
+        }
+      },
+      "SimpleTicketBookingSystem.Data/1.0.0": {
+        "dependencies": {
+          "SimpleTicketBookingSystem.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "SimpleTicketBookingSystem.Data.dll": {}
+        }
+      },
+      "SimpleTicketBookingSystem.Interfaces/1.0.0": {
+        "runtime": {
+          "SimpleTicketBookingSystem.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleTicketBookingSystem.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleTicketBookingSystem.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleTicketBookingSystem.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
