@@ -15,6 +15,16 @@
           "bin/placeholder/SimpleTicketBookingSystem.Data.dll": {}
         }
       },
+      "SimpleTicketBookingSystem.Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SimpleTicketBookingSystem.Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimpleTicketBookingSystem.Enums.dll": {}
+        }
+      },
       "SimpleTicketBookingSystem.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -33,6 +43,11 @@
       "path": "../SimpleTicketBookingSystem.Data/SimpleTicketBookingSystem.Data.csproj",
       "msbuildProject": "../SimpleTicketBookingSystem.Data/SimpleTicketBookingSystem.Data.csproj"
     },
+    "SimpleTicketBookingSystem.Enums/1.0.0": {
+      "type": "project",
+      "path": "../SimpleTicketBookingSystem.Enums/SimpleTicketBookingSystem.Enums.csproj",
+      "msbuildProject": "../SimpleTicketBookingSystem.Enums/SimpleTicketBookingSystem.Enums.csproj"
+    },
     "SimpleTicketBookingSystem.Interfaces/1.0.0": {
       "type": "project",
       "path": "../SimpleTicketBookingSystem.Interfaces/SimpleTicketBookingSystem.Interfaces.csproj",
@@ -42,6 +57,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "SimpleTicketBookingSystem.Data >= 1.0.0",
+      "SimpleTicketBookingSystem.Enums >= 1.0.0",
       "SimpleTicketBookingSystem.Interfaces >= 1.0.0"
     ]
   },
@@ -52,11 +68,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.UI\\SimpleTicketBookingSystem.UI.csproj",
+      "projectUniqueName": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.UI\\SimpleTicketBookingSystem.UI.csproj",
       "projectName": "SimpleTicketBookingSystem.UI",
-      "projectPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.UI\\SimpleTicketBookingSystem.UI.csproj",
+      "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.UI\\SimpleTicketBookingSystem.UI.csproj",
       "packagesPath": "C:\\Users\\DIO\\.nuget\\packages\\",
-      "outputPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.UI\\obj\\",
+      "outputPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,11 +93,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj": {
-              "projectPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj"
+            "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj": {
+              "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj"
             },
-            "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj": {
-              "projectPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj"
+            "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Enums\\SimpleTicketBookingSystem.Enums.csproj": {
+              "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Enums\\SimpleTicketBookingSystem.Enums.csproj"
+            },
+            "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj": {
+              "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj"
             }
           }
         }

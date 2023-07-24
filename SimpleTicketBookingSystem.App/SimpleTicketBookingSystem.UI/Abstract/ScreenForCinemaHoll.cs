@@ -6,20 +6,54 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleTicketBookingSystem.UI
+namespace SimpleTicketBookingSystem.UI.Abstract
 {
-    public abstract class ScreenForCinemaHoll : Screen 
+    public abstract class ScreenForCinemaHoll : Screen
     {
 
+        #region piblic field 
+
+        public List<List<Seat>> twoDimensionalList = new List<List<Seat>>();
         public int currentField = 0;
 
         public int currentHorizontalFieald = 0;
+        public int RowCount { get; set; }
+        public int ColomCount { get; set; }
+
+        #endregion
+
+
+
+        //public override void ScreenRender(List<ScreenLineEntry> Lines, string ColorOfScreen = null)
+        //{
+        //    ShowCinemaHoll();
+        //}
+
+
+
+
+            public void ShowCinemaHoll()
+        {
+            var ListOfSeats = SeatsListAdd(RowCount, ColomCount);
+
+            CinemaHallHandler(ListOfSeats);
+
+            CinemaHallReander(twoDimensionalList);
+
+
+            var Movie = new Movie(ListOfSeats);
+
+            var Reservation = new Reservation(Movie);
+        }
+
+
+
 
         public override void CursorHandler(List<ScreenLineEntry> ListOfLines, string ColorOfCursor)
         {
             for (int Row = 1; Row < twoDimensionalList.Count; Row++)
             {
-                for (int Colom = 1; Colom < 15; Colom++)
+                for (int Colom = 1; Colom < ColomCount; Colom++)
                 {
                     if (Row != currentField && Colom != currentHorizontalFieald)
                     {
@@ -47,11 +81,9 @@ namespace SimpleTicketBookingSystem.UI
                     twoDimensionalList[Row][Colom].ForegroundColor = ColorOfCursor;
                 }
             }
-            
+
         }
 
-
-       
 
 
         #region CinemaHoll
@@ -104,7 +136,12 @@ namespace SimpleTicketBookingSystem.UI
                 Console.WriteLine();
                 foreach (var seat in innerList)
                 {
+                    if (Enum.TryParse(seat.ForegroundColor, out ConsoleColor color))
+                    {
+                        Console.ForegroundColor = color;
+                    }
                     Console.Write($"{seat.icon}  ");
+                    Console.ResetColor();
                 }
 
             }
@@ -114,13 +151,11 @@ namespace SimpleTicketBookingSystem.UI
 
 
 
-
-
         public override void EnterScreen()
         {
             base.EnterScreen();
         }
 
-       
+
     }
 }

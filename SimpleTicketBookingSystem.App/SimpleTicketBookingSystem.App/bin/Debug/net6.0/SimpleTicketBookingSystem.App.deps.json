@@ -427,6 +427,11 @@
           "SimpleTicketBookingSystem.Data.dll": {}
         }
       },
+      "SimpleTicketBookingSystem.Enums/1.0.0": {
+        "runtime": {
+          "SimpleTicketBookingSystem.Enums.dll": {}
+        }
+      },
       "SimpleTicketBookingSystem.Interfaces/1.0.0": {
         "runtime": {
           "SimpleTicketBookingSystem.Interfaces.dll": {}
@@ -435,6 +440,7 @@
       "SimpleTicketBookingSystem.UI/1.0.0": {
         "dependencies": {
           "SimpleTicketBookingSystem.Data": "1.0.0",
+          "SimpleTicketBookingSystem.Enums": "1.0.0",
           "SimpleTicketBookingSystem.Interfaces": "1.0.0"
         },
         "runtime": {
@@ -660,6 +666,11 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "SimpleTicketBookingSystem.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleTicketBookingSystem.Enums/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

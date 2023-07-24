@@ -1,74 +1,64 @@
 ﻿using SimpleTicketBookingSystem.Data;
+using SimpleTicketBookingSystem.Data.Screen;
+using SimpleTicketBookingSystem.Enums;
 using SimpleTicketBookingSystem.Interfaces;
 using SimpleTicketBookingSystem.Interfaces.Data;
+using SimpleTicketBookingSystem.UI.Abstract;
 
 namespace SimpleTicketBookingSystem.UI
 {
-    public class MainScreen : ScreenForCinemaHoll
+    public class MainScreen : Screen
     {
 
-       // List<List<Seat>> twoDimensionalList = new List<List<Seat>>();
+        public SelectSeatsScreen _selectSeatsScreen;
 
-        public int RowCount = 7;
-
-        public int ColomCount = 11;
-
+        public MainScreen(SelectSeatsScreen selectSeatsScreen)
+        {
+            _selectSeatsScreen = selectSeatsScreen; 
+        }
 
         public override void Show()
         {
+            while (true)
+            {
 
-            var ListOfSeats = SeatsListAdd(RowCount, ColomCount);
+                var list = new List<ScreenLineEntry>
+                {
+                    new ScreenLineEntry { Text = "0. Exit" },
+                    new ScreenLineEntry { Text = "1. Select seats" },
+                    new ScreenLineEntry { Text = "2. Create a new settings" },
+                };
+              
+                ScreenRender(list);
 
-            CinemaHallHandler(ListOfSeats);
+                SwitchHandler();
 
-            CinemaHallReander(twoDimensionalList);
-
-
-            var Movie = new Movie(ListOfSeats);
-
-            var Reservation = new Reservation(new Movie(SeatsListAdd(10, 15)));
-
-            
-
-
-                //Reservation.Screening.DisplayAvailableSeats();
-
-
-
-
-                Console.WriteLine();
-               
-               // ScreenRender(list);
-
-               // SwitchHandler();
-
-            //}
+            }
         }
 
-        //public override void EnterScreen()
-        //{
-        //    try
-        //    {
-        //        MainScreenChoices choice = (MainScreenChoices)currentField;
-        //        switch (choice)
-        //        {
-        //            case MainScreenChoices.Animals:
-        //                _animalsScreen.Show();
-        //                break;
+        public override void AdditionalSection()
+        {
+            var CinemaHoll = new CinemaHoll(10, 10);
 
-        //            case MainScreenChoices.Settings:
-        //                _creatSettingsScreen.Show();
-        //                break;
+            CinemaHoll.ShowCinemaHoll();
+        }
 
-        //            case MainScreenChoices.Exit:
-        //                Console.WriteLine("Goodbye.");
-        //                return;
-        //        }
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("Invalid choice. Try again.");
-        //    }
-        //}
+        public override void EnterScreen()
+        {
+            try
+            {
+                MainScreenChoices choice = (MainScreenChoices)currentField;
+                switch (choice)
+                {
+                    case MainScreenChoices.addSiets:
+                         _selectSeatsScreen.Show();
+                        break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid choice. Try again.");
+            }
+        }
     }
 }

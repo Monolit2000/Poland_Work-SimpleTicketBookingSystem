@@ -41,6 +41,7 @@ public class Program
             .ConfigureServices((context, services) =>
             {
                 services.AddSingleton<MainScreen, MainScreen>();
+                services.AddSingleton<SelectSeatsScreen, SelectSeatsScreen>();
                // services.AddSingleton<IDataService, DataService>();
 
             });

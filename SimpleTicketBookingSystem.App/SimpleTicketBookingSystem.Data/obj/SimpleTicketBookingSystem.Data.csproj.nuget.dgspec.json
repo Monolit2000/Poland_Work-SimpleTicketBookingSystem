@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj": {}
+    "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj": {}
   },
   "projects": {
-    "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj": {
+    "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj",
+        "projectUniqueName": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj",
         "projectName": "SimpleTicketBookingSystem.Data",
-        "projectPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj",
+        "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj",
         "packagesPath": "C:\\Users\\DIO\\.nuget\\packages\\",
-        "outputPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\obj\\",
+        "outputPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj": {
-                "projectPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj"
+              "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj": {
+                "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj": {
+    "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj",
+        "projectUniqueName": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj",
         "projectName": "SimpleTicketBookingSystem.Interfaces",
-        "projectPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj",
+        "projectPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\SimpleTicketBookingSystem.Interfaces.csproj",
         "packagesPath": "C:\\Users\\DIO\\.nuget\\packages\\",
-        "outputPath": "E:\\C#_WORK\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\obj\\",
+        "outputPath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

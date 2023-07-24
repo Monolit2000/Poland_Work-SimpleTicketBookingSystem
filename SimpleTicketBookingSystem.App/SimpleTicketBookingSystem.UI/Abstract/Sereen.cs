@@ -1,6 +1,7 @@
 ﻿using SimpleTicketBookingSystem.Data;
 using SimpleTicketBookingSystem.Data.Screen;
 using SimpleTicketBookingSystem.Interfaces;
+using SimpleTicketBookingSystem.UI;
 using System;
 
 
@@ -17,7 +18,6 @@ public abstract class Screen
 
     public List<ScreenLineEntry> screenLines { get; set; } = new List<ScreenLineEntry>();
 
-    public List<List<Seat>> twoDimensionalList = new List<List<Seat>>();
     /// <summary>
     /// 
     /// </summary>
@@ -38,69 +38,69 @@ public abstract class Screen
     #endregion
 
 
-    #region CinemaHoll
+    #region TEST
+    ///// <summary>
+    ///// 
+    ///// </summary>
+    ///// <param name="RowCount"></param>
+    ///// <param name="ColomCount"></param>
+    //public virtual List<Seat> SeatsListAdd(int RowCount, int ColomCount)
+    //{
+    //    List<Seat> Seats = new List<Seat>();
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="RowCount"></param>
-    /// <param name="ColomCount"></param>
-    public virtual List<Seat> SeatsListAdd(int RowCount, int ColomCount)
-    {
-        List<Seat> Seats = new List<Seat>();
+    //    for (int Row = 1; Row < RowCount; Row++)
+    //    {
+    //        for (int Colom = 1; Colom < ColomCount; Colom++)
+    //        {
+    //            Seats.Add(new Seat { Row = Row, Number = Colom, IsAvailable = true, icon = "h" });
+    //        }
+    //    }
 
-        for (int Row = 1; Row < RowCount; Row++)
-        {
-            for (int Colom = 1; Colom < ColomCount; Colom++)
-            {
-                Seats.Add(new Seat { Row = Row, Number = Colom, IsAvailable = true, icon = "h" });
-            }
-        }
-
-        return Seats;
-    }
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="seats"></param>
-    public void CinemaHallHandler(List<Seat> seats)
-    {
-        foreach (var seat in seats)
-        {
-
-
-            int rowIndex = seat.Row - 1;
-
-            while (rowIndex >= twoDimensionalList.Count)
-            {
-                twoDimensionalList.Add(new List<Seat>());
-            }
-
-            twoDimensionalList[rowIndex].Add(seat);
-
-           // Console.WriteLine($" Row - {seat.Row}     Number - {seat.Number}");
+    //    return Seats;
+    //}
+    ///// <summary>
+    ///// 
+    ///// </summary>
+    ///// <param name="seats"></param>
+    //public void CinemaHallHandler(List<Seat> seats)
+    //{
+    //    foreach (var seat in seats)
+    //    {
 
 
-        }
-    }
-    /// <summary>
-    ///
-    /// </summary>
-    /// <param name="twoDimensionalList"></param>
-    public void CinemaHallReander(List<List<Seat>> twoDimensionalList)
-    {
-        foreach (List<Seat> innerList in twoDimensionalList)
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            foreach (var seat in innerList)
-            {
-                Console.Write($"{seat.icon}  ");
-            }
+    //        int rowIndex = seat.Row - 1;
 
-        }
-    }
+    //        while (rowIndex >= twoDimensionalList.Count)
+    //        {
+    //            twoDimensionalList.Add(new List<Seat>());
+    //        }
 
+    //        twoDimensionalList[rowIndex].Add(seat);
+
+    //       // Console.WriteLine($" Row - {seat.Row}     Number - {seat.Number}");
+
+
+    //    }
+    //}
+    ///// <summary>
+    /////
+    ///// </summary>
+    ///// <param name="twoDimensionalList"></param>
+    //public void CinemaHallReander(List<List<Seat>> twoDimensionalList)
+    //{
+    //    foreach (List<Seat> innerList in twoDimensionalList)
+    //    {
+    //        Console.WriteLine();
+    //        Console.WriteLine();
+    //        foreach (var seat in innerList)
+    //        {
+    //            Console.Write($"{seat.icon}  ");
+    //        }
+
+    //    }
+    //}
+
+    //#endregion
     #endregion
 
 
@@ -137,6 +137,7 @@ public abstract class Screen
     public virtual void ScreenRender(List<ScreenLineEntry> Lines, string ColorOfScreen = null)
     {
 
+
         if (screenLines.Count == 0)
         {
             screenLines.AddRange(Lines);
@@ -145,6 +146,8 @@ public abstract class Screen
         ScreenColor = ColorOfScreen;
 
         Console.Clear();
+
+        AdditionalSection();
 
         Console.WriteLine();
 
@@ -158,6 +161,13 @@ public abstract class Screen
     }
     #endregion
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public virtual void AdditionalSection()
+    {
+      
+    }
 
     #region ScreenColorHendlerRender
 
@@ -256,7 +266,11 @@ public abstract class Screen
         }
     }
 
+    #region Navigation
 
+    /// <summary>
+    /// обработка нажатия клавиши вверх
+    /// </summary>
     public virtual void MoveUp()
     {
         if (currentField > 0)
@@ -268,6 +282,9 @@ public abstract class Screen
             Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
         }
     }
+    /// <summary>
+    /// обработка нажтии клавиши вниз 
+    /// </summary>
     public virtual void MoveDown()
     {
         if (currentField < screenLines.Count - 1)
@@ -279,6 +296,9 @@ public abstract class Screen
             Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
         }
     }
+    /// <summary>
+    /// обработкка нажатии клавиши в право 
+    /// </summary>
     public virtual void MoveRight()
     {
         if (currentField > 0)
@@ -290,6 +310,9 @@ public abstract class Screen
             Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
         }
     }
+    /// <summary>
+    /// обработкка нажатии клавиши в лево 
+    /// </summary>
     public virtual void MoveLeft()
     {
         if (currentField < screenLines.Count - 1)
@@ -302,8 +325,11 @@ public abstract class Screen
         }
     }
 
+    #endregion
+
+
     /// <summary>
-    /// 
+    /// обработка нажатия клавиши Enter 
     /// </summary>
     public virtual void EnterScreen()
     {
