@@ -1,5 +1,6 @@
 ﻿using SimpleTicketBookingSystem.Data.Screen;
 using SimpleTicketBookingSystem.Enums;
+using SimpleTicketBookingSystem.UI.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,24 +9,18 @@ using System.Threading.Tasks;
 
 namespace SimpleTicketBookingSystem.UI
 {
-    public class SelectSeatsScreen : Screen
+    public class SelectSeatsScreen : ScreenForCinemaHoll
     {
 
+        public override void AdditionalSection()
+         {
+            ShowCinemaHoll();
+         }
 
-
-       
-
-
-
-        public override void Show()
+        public override void Show() 
         {
             while (true)
             {
-
-                var CinemaHoll = new CinemaHoll(10, 10);
-
-                CinemaHoll.ShowCinemaHoll();
-
 
                 var list = new List<ScreenLineEntry>
                {
@@ -34,9 +29,18 @@ namespace SimpleTicketBookingSystem.UI
                 new ScreenLineEntry { Text = "2. Create a new settings" },
                };
 
-                ScreenRender(list);
 
-                SwitchHandler();
+                RowCount = 10;
+                ColomCount = 10;
+
+                ShowCinemaHoll();
+
+               // ScreenRender(list);
+
+
+
+                SwitchHandlerForCinemaHoll();
+                return;
             }
         }
 
@@ -50,6 +54,9 @@ namespace SimpleTicketBookingSystem.UI
                     case MainScreenChoices.Exit:
                         break;
                 }
+
+
+
             }
             catch
             {

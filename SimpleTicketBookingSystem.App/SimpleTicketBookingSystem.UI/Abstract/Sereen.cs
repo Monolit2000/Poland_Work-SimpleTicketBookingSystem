@@ -239,7 +239,7 @@ public abstract class Screen
 
     #region Navigation
 
-    public void SwitchHandler()
+    public virtual void SwitchHandler()
     {
 
         while (true)
@@ -290,34 +290,6 @@ public abstract class Screen
         if (currentField < screenLines.Count - 1)
         {
             currentField++;
-
-            ScreenRender(screenLines, ScreenColor);
-
-            Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
-        }
-    }
-    /// <summary>
-    /// обработкка нажатии клавиши в право 
-    /// </summary>
-    public virtual void MoveRight()
-    {
-        if (currentField > 0)
-        {
-            currentHorizontalFieald--;
-
-            ScreenRender(screenLines, ScreenColor);
-
-            Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
-        }
-    }
-    /// <summary>
-    /// обработкка нажатии клавиши в лево 
-    /// </summary>
-    public virtual void MoveLeft()
-    {
-        if (currentField < screenLines.Count - 1)
-        {
-            currentHorizontalFieald++;
 
             ScreenRender(screenLines, ScreenColor);
 

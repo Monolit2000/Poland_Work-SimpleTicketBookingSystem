@@ -11,7 +11,7 @@ namespace SimpleTicketBookingSystem.Data
     {
         public int Row { get; set; }
         public int Number { get; set; }
-        public bool IsAvailable { get; set; }
+        public bool IsAvailable { get; set; } = true;
         public string? icon { get; set; } 
         public string? ForegroundColor { get; set; }
     }

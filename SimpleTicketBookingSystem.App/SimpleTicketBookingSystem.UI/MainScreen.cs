@@ -36,12 +36,12 @@ namespace SimpleTicketBookingSystem.UI
             }
         }
 
-        public override void AdditionalSection()
-        {
-            var CinemaHoll = new CinemaHoll(10, 10);
+        //public override void AdditionalSection()
+        //{
+        //    var CinemaHoll = new CinemaHoll(10, 10);
 
-            CinemaHoll.ShowCinemaHoll();
-        }
+        //    CinemaHoll.ShowCinemaHoll();
+        //}
 
         public override void EnterScreen()
         {
