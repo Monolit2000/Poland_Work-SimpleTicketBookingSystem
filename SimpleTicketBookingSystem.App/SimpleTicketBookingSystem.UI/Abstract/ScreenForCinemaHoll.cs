@@ -21,7 +21,15 @@ namespace SimpleTicketBookingSystem.UI.Abstract
         public int RowCount { get; set; }
         public int ColomCount { get; set; }
 
+        public bool Switch { get; set; } = false;
+
         #endregion
+
+
+        public virtual void AdditionalSectionForCinemaHoll()
+        {
+
+        }
 
 
         #region Main fanction
@@ -39,9 +47,11 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
             CinemaHallReander(twoDimensionalList);
 
+            AdditionalSectionForCinemaHoll();
+
            // var Movie = new Movie(ListOfSeats);
 
-           // var Reservation = new Reservation(Movie);
+            // var Reservation = new Reservation(Movie);
         }
 
         #endregion
@@ -118,7 +128,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
                         Console.BackgroundColor = color;
 
                     }
-                    Console.Write($"{seat.icon}   ");
+                    Console.Write($"{seat.icon}"); Console.Write(" ");
                     Console.ResetColor();
                 }
                 //Console.ResetColor();
@@ -148,14 +158,22 @@ namespace SimpleTicketBookingSystem.UI.Abstract
         #endregion
 
 
+
+
+       
+
+
+
         #region Navigation 
 
-        //сделать другую функйию для обработки навигации для экрна SwitchHandlerForCinemaHoll 
+ 
         public void SwitchHandlerForCinemaHoll()
         {
 
             while (true)
             {
+                //ShowCinemaHoll();
+                ScreenRender(screenLines);
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);
                 switch (keyInfo.Key)
                 {
@@ -165,6 +183,12 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
                     case ConsoleKey.DownArrow:
                         MoveDown();
+
+                        if (Switch == true)
+                        {
+                            return;
+                        }
+
                         break;
 
                     case ConsoleKey.LeftArrow:
@@ -197,7 +221,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
             {
                 currentVerticalFieald--;
 
-                ShowCinemaHoll();
+                //ShowCinemaHoll();
 
                 Console.WriteLine($"You have moved to the screen: VerticalFieald = {currentVerticalFieald} -- HorizontalFieald = {currentHorizontalFieald}");
             }
@@ -205,11 +229,17 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
         public void MoveDown()
         {
+            if (currentVerticalFieald == twoDimensionalList.Count - 1)
+            {
+                Switch = true;
+            }
+
             if (currentVerticalFieald < twoDimensionalList.Count - 1)
             {
                 currentVerticalFieald++;
 
-                ShowCinemaHoll();
+                
+                //ShowCinemaHoll();
 
                 Console.WriteLine($"You have moved to the screen: VerticalFieald = {currentVerticalFieald} -- HorizontalFieald = {currentHorizontalFieald}");
             }
@@ -221,7 +251,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
             {
                 currentHorizontalFieald--;
 
-                ShowCinemaHoll();
+               // ShowCinemaHoll();
 
                 Console.WriteLine($"You have moved to the screen: VerticalFieald = {currentVerticalFieald} -- HorizontalFieald = {currentHorizontalFieald}");
             }
@@ -234,13 +264,15 @@ namespace SimpleTicketBookingSystem.UI.Abstract
             {
                 currentHorizontalFieald++;
 
-                ShowCinemaHoll();
+                //ShowCinemaHoll();
 
                 Console.WriteLine($"You have moved to the screen: VerticalFieald = {currentVerticalFieald} -- HorizontalFieald = {currentHorizontalFieald}");
             }
         }
 
+        #endregion
 
+        #region Enter 
         public void EnterScreenForCinemaHoll()
         {
             try
@@ -264,6 +296,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
                 Console.WriteLine("Invalid choice. Try again.");
             }
         }
+        #endregion
 
 
 
@@ -277,7 +310,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
 
 
-        #endregion
+       
 
         #endregion
     }

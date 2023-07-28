@@ -12,17 +12,24 @@ namespace SimpleTicketBookingSystem.UI
     public class SelectSeatsScreen : ScreenForCinemaHoll
     {
 
+        public List<ScreenLineEntry> list = new List<ScreenLineEntry>();
+
         public override void AdditionalSection()
          {
             ShowCinemaHoll();
          }
+
+        public override void AdditionalSectionForCinemaHoll()
+        {
+          // ScreenRender(list);
+        }
 
         public override void Show() 
         {
             while (true)
             {
 
-                var list = new List<ScreenLineEntry>
+                 list = new List<ScreenLineEntry>
                {
                 new ScreenLineEntry { Text = "0. Exit" },
                 new ScreenLineEntry { Text = "1. Enter" },
@@ -33,13 +40,25 @@ namespace SimpleTicketBookingSystem.UI
                 RowCount = 10;
                 ColomCount = 10;
 
-                ShowCinemaHoll();
+               // ShowCinemaHoll();
 
-               // ScreenRender(list);
+                ScreenRender(list);
 
+                //сделать переключалку с функциями ниже 
 
+                //if (Switch == true)
+                //{
+                //    SwitchHandler();
+                //}
+                //else
+                //{
+                //    SwitchHandlerForCinemaHoll();
+                //}
 
                 SwitchHandlerForCinemaHoll();
+
+                SwitchHandler();
+
                 return;
             }
         }
@@ -48,16 +67,17 @@ namespace SimpleTicketBookingSystem.UI
         {
             try
             {
-                MainScreenChoices choice = (MainScreenChoices)currentField;
+                SelectSeatsScreenChoices choice = (SelectSeatsScreenChoices)currentField;
                 switch (choice)
                 {
-                    case MainScreenChoices.Exit:
+                    case SelectSeatsScreenChoices.Exit:
+                        break;
+
+                    case SelectSeatsScreenChoices.Enter:
                         break;
                 }
-
-
-
             }
+             
             catch
             {
                 Console.WriteLine("Invalid choice. Try again.");

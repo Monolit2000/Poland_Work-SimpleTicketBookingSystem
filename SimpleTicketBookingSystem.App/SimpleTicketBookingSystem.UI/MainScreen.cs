@@ -31,6 +31,8 @@ namespace SimpleTicketBookingSystem.UI
               
                 ScreenRender(list);
 
+
+
                 SwitchHandler();
 
             }
