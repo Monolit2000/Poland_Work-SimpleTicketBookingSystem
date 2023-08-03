@@ -24,7 +24,7 @@ namespace SimpleTicketBookingSystem.UI
           // ScreenRender(list);
         }
 
-        public override void Show() 
+        public override void Show(int a ) 
         {
             while (true)
             {
@@ -44,20 +44,13 @@ namespace SimpleTicketBookingSystem.UI
 
                 ScreenRender(list);
 
-                //сделать переключалку с функциями ниже 
-
-                //if (Switch == true)
-                //{
-                //    SwitchHandler();
-                //}
-                //else
-                //{
-                //    SwitchHandlerForCinemaHoll();
-                //}
+           
 
                 SwitchHandlerForCinemaHoll();
 
                 SwitchHandler();
+
+                Switch = false;
 
                 return;
             }

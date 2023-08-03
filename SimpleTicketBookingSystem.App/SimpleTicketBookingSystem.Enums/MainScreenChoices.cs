@@ -3,7 +3,8 @@
     public enum MainScreenChoices
     {
        Exit = 0,
-       addSiets = 1
+       СhooseAMovie = 1,
+       addSiets = 2
        
     }
 }

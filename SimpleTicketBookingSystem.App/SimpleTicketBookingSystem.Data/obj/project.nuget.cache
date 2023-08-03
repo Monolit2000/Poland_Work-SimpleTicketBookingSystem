@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5D85c0FfPm4oKb7l98GKYSBQJ4ObsQ2CpptD4dg0yfdB4K789klj+f2TMvHf1ITA+BB+6L2uJeaHm8ytbWX5mQ==",
+  "dgSpecHash": "e4m6jnXcbdRq1WZmVqZ6AV4ute0tUITU9w1XXteriGtGhmA/Tb3tHLDBnDzuV1KYwzooqCf3sUVP0UReIQPAog==",
   "success": true,
   "projectFilePath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.Data\\SimpleTicketBookingSystem.Data.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DIO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

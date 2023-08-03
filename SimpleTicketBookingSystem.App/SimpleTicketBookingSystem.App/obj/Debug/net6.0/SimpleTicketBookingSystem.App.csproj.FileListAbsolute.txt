@@ -108,3 +108,5 @@ E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.Ap
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\obj\Debug\net6.0\ref\SimpleTicketBookingSystem.App.dll
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Enums.dll
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Enums.pdb
+E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Service.dll
+E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Service.pdb

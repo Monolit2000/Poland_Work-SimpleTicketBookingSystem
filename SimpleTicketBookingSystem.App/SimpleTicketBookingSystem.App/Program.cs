@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SimpleTicketBookingSystem.Interfaces;
+using SimpleTicketBookingSystem.Service;
 //using SimpleTicketBookingSystem.Services;
 using SimpleTicketBookingSystem.UI;
 //using PeanutButter.TinyEventAggregator;
-//using SimpleTicketBookingSystem.Data;
+using SimpleTicketBookingSystem.Data;
 
 namespace SampleShopApp.App;
 
@@ -42,7 +43,8 @@ public class Program
             {
                 services.AddSingleton<MainScreen, MainScreen>();
                 services.AddSingleton<SelectSeatsScreen, SelectSeatsScreen>();
-               // services.AddSingleton<IDataService, DataService>();
+                services.AddSingleton<IDataService, DataService>();
+                services.AddSingleton<MoviesScreen, MoviesScreen>();
 
             });
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ebfv1yRO6viSkj619JhCQo1/A62/FnLbhe+Yr2S7hPf2Fk0QQ03s8pj3KG5jjzJu8UzTjMRkbgpL/g+xC8vMQw==",
+  "dgSpecHash": "ScPWn9G+H9firaUxWySnP83OsxsK2uiH2DZdUVyIrLs+E2yMWzbgvwRzcutU6CBhdz4E1xJ5WPi6C7UVpW3z+w==",
   "success": true,
   "projectFilePath": "E:\\Poland_App\\Poland_Work-SimpleTicketBookingSystem\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.App\\SimpleTicketBookingSystem.App.csproj",
   "expectedPackageFiles": [
@@ -29,8 +29,12 @@
     "C:\\Users\\DIO\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0\\microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.1\\system.diagnostics.diagnosticsource.7.0.1.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\system.diagnostics.eventlog\\7.0.0\\system.diagnostics.eventlog.7.0.0.nupkg.sha512",
+    "C:\\Users\\DIO\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\DIO\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"

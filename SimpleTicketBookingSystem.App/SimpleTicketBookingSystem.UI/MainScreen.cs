@@ -12,9 +12,15 @@ namespace SimpleTicketBookingSystem.UI
 
         public SelectSeatsScreen _selectSeatsScreen;
 
-        public MainScreen(SelectSeatsScreen selectSeatsScreen)
+        public MoviesScreen _moviesScreen;
+
+        public IDataService _dataService;
+
+        public MainScreen(SelectSeatsScreen selectSeatsScreen, MoviesScreen moviesScreen, IDataService dataService)
         {
-            _selectSeatsScreen = selectSeatsScreen; 
+            _selectSeatsScreen = selectSeatsScreen;
+            _moviesScreen = moviesScreen;
+            _dataService = dataService; 
         }
 
         public override void Show()
@@ -22,13 +28,17 @@ namespace SimpleTicketBookingSystem.UI
             while (true)
             {
 
+                
+
                 var list = new List<ScreenLineEntry>
                 {
                     new ScreenLineEntry { Text = "0. Exit" },
+                    new ScreenLineEntry { Text = "1. Choose a movie" },
                     new ScreenLineEntry { Text = "1. Select seats" },
                     new ScreenLineEntry { Text = "2. Create a new settings" },
                 };
-              
+
+
                 ScreenRender(list);
 
 
@@ -38,12 +48,17 @@ namespace SimpleTicketBookingSystem.UI
             }
         }
 
-        //public override void AdditionalSection()
-        //{
-        //    var CinemaHoll = new CinemaHoll(10, 10);
-
-        //    CinemaHoll.ShowCinemaHoll();
-        //}
+        public override void AdditionalSection()
+        {
+            //foreach (var movie in _dataService.Movies.MoviesList)
+            //{
+            //    //Console.WriteLine(movie.Seats.SeatsList[10].icon);
+            //    foreach (var seat in movie.Seats.SeatsList)
+            //    {
+            //        Console.WriteLine(seat.icon);
+            //    }
+            //}
+        }
 
         public override void EnterScreen()
         {
@@ -52,8 +67,12 @@ namespace SimpleTicketBookingSystem.UI
                 MainScreenChoices choice = (MainScreenChoices)currentField;
                 switch (choice)
                 {
+                    case MainScreenChoices.СhooseAMovie:
+                        _moviesScreen.Show();
+                        break;
+
                     case MainScreenChoices.addSiets:
-                         _selectSeatsScreen.Show();
+                        _selectSeatsScreen.Show();
                         break;
                 }
             }
