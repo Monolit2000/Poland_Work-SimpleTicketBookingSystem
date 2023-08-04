@@ -1,5 +1,7 @@
-﻿using SimpleTicketBookingSystem.Data.Screen;
+﻿using SimpleTicketBookingSystem.Data;
+using SimpleTicketBookingSystem.Data.Screen;
 using SimpleTicketBookingSystem.Enums;
+using SimpleTicketBookingSystem.Interfaces.Data;
 using SimpleTicketBookingSystem.UI.Abstract;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,9 @@ namespace SimpleTicketBookingSystem.UI
 
         public override void AdditionalSection()
          {
+
+           // Console.WriteLine();
+
             ShowCinemaHoll();
          }
 
@@ -24,27 +29,33 @@ namespace SimpleTicketBookingSystem.UI
           // ScreenRender(list);
         }
 
-        public override void Show(int a ) 
+        public override void Show(IMovie movie)
         {
             while (true)
             {
+                twoDimensionalList.Clear();
 
-                 list = new List<ScreenLineEntry>
+                var list = new List<ScreenLineEntry>
                {
+                new ScreenLineEntry{Text = $"{movie.Title}" },
                 new ScreenLineEntry { Text = "0. Exit" },
                 new ScreenLineEntry { Text = "1. Enter" },
                 new ScreenLineEntry { Text = "2. Create a new settings" },
                };
 
 
-                RowCount = 10;
-                ColomCount = 10;
+                 RowCount = 10;
+                 ColomCount = 10;
 
-               // ShowCinemaHoll();
+                // ShowCinemaHoll();
 
+
+                if (twoDimensionalList.Count == 0)
+                {
+                    CinemaHallHandler(movie.Seats.SeatsList);
+                }
+ 
                 ScreenRender(list);
-
-           
 
                 SwitchHandlerForCinemaHoll();
 
@@ -68,6 +79,7 @@ namespace SimpleTicketBookingSystem.UI
 
                     case SelectSeatsScreenChoices.Enter:
                         break;
+
                 }
             }
              

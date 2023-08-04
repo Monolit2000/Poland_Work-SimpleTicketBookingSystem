@@ -9,6 +9,6 @@ namespace SimpleTicketBookingSystem.Enums
     public enum SelectSeatsScreenChoices
     {
         Exit = 0,
-        Enter = 1
+        Enter = 2
     }
 }

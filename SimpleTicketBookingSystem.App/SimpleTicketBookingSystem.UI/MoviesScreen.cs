@@ -12,12 +12,13 @@ namespace SimpleTicketBookingSystem.UI
     public class MoviesScreen : Screen
     {
         public IDataService _dataService;
-
+        public SelectSeatsScreen _selectSeatsScreen;
 
         #region ctor
-        public MoviesScreen(IDataService dataService)
+        public MoviesScreen(IDataService dataService, SelectSeatsScreen selectSeatsScreen)
         {
-            _dataService = dataService; 
+            _dataService = dataService;
+            _selectSeatsScreen = selectSeatsScreen;
         }
         #endregion
 
@@ -49,6 +50,9 @@ namespace SimpleTicketBookingSystem.UI
 
         public override void AdditionalSection()
         {
+
+            Console.WriteLine(currentField);
+
             //foreach (var movie in _dataService.Movies.MoviesList)
             //{
              
@@ -63,13 +67,16 @@ namespace SimpleTicketBookingSystem.UI
         {
             try
             {
-                MainScreenChoices choice = (MainScreenChoices)currentField;
-                switch (choice)
-                {
-                    case MainScreenChoices.addSiets:
-                        //_selectSeatsScreen.Show();
-                        break;
-                }
+                //MovieScreenChoices choice = (MovieScreenChoices)currentField;
+                //switch (currentField)
+                //{
+                //    case MovieScreenChoices.addSiets:
+                //        _selectSeatsScreen.Show(_dataService.Movies.MoviesList[choice]);
+                //        break;
+                //}
+
+                _selectSeatsScreen.Show(_dataService.Movies.MoviesList[currentField]);
+
             }
             catch
             {

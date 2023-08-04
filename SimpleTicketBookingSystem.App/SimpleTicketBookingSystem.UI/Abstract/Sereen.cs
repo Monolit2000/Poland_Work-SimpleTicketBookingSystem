@@ -1,6 +1,7 @@
 ﻿using SimpleTicketBookingSystem.Data;
 using SimpleTicketBookingSystem.Data.Screen;
 using SimpleTicketBookingSystem.Interfaces;
+using SimpleTicketBookingSystem.Interfaces.Data;
 using SimpleTicketBookingSystem.UI;
 using System;
 
@@ -231,6 +232,11 @@ public abstract class Screen
     /// Show the screen.
     /// </summary>
     public virtual void Show()
+    {
+        Console.WriteLine("Showing screen");
+    }
+
+    public virtual void Show(IMovie movie)
     {
         Console.WriteLine("Showing screen");
     }

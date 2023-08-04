@@ -8,5 +8,6 @@ namespace SimpleTicketBookingSystem.Enums
 {
     public enum MovieScreenChoices
     {
+        addSiets = 1
     }
 }

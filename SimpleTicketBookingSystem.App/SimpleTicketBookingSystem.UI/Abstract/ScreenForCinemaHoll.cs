@@ -1,5 +1,6 @@
 ﻿using SimpleTicketBookingSystem.Data;
 using SimpleTicketBookingSystem.Data.Screen;
+using SimpleTicketBookingSystem.Interfaces.Data;
 using System;
 using System.Collections.Generic; 
 using System.Linq;
@@ -12,7 +13,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
     {
         #region piblic field 
 
-        public List<List<Seat>> twoDimensionalList = new List<List<Seat>>();
+        public List<List<ISeat>> twoDimensionalList = new List<List<ISeat>>();
         public int currentField = 0;
 
         public int currentVerticalFieald = 0;
@@ -38,12 +39,12 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
             Console.Clear();
 
-            if (twoDimensionalList.Count == 0)
-            {
-                var ListOfSeats = SeatsListAdd(RowCount, ColomCount);
+            //if (twoDimensionalList.Count == 0)
+            //{
+            //    var ListOfSeats = SeatsListAdd(RowCount, ColomCount);
 
-                CinemaHallHandler(ListOfSeats);
-            }
+            //    CinemaHallHandler(ListOfSeats);
+            //}
 
             CinemaHallReander(twoDimensionalList);
 
@@ -58,7 +59,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
 
         #region Cursor Hander 
-        public void CursorHandlerForCinemaScreen(List<List<Seat>> twoDimensionalList, string ColorOfCursor)
+        public void CursorHandlerForCinemaScreen(List<List<ISeat>> twoDimensionalList, string ColorOfCursor)
         {
          
             
@@ -85,7 +86,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
         /// 
         /// </summary>
         /// <param name="seats"></param>
-        public void CinemaHallHandler(List<Seat> seats)
+        public void CinemaHallHandler(List<ISeat> seats)
         {
             foreach (var seat in seats)
             {
@@ -93,7 +94,7 @@ namespace SimpleTicketBookingSystem.UI.Abstract
 
                 while (rowIndex >= twoDimensionalList.Count)
                 {
-                    twoDimensionalList.Add(new List<Seat>());
+                    twoDimensionalList.Add(new List<ISeat>());
                 }
                 twoDimensionalList[rowIndex].Add(seat);
                 // Console.WriteLine($" Row - {seat.Row}     Number - {seat.Number}");
@@ -103,12 +104,12 @@ namespace SimpleTicketBookingSystem.UI.Abstract
         ///
         /// </summary>
         /// <param name="twoDimensionalList"></param>
-        public void CinemaHallReander(List<List<Seat>> twoDimensionalList)
+        public void CinemaHallReander(List<List<ISeat>> twoDimensionalList)
         {
 
             CursorHandlerForCinemaScreen(twoDimensionalList, "Red");
 
-            foreach (List<Seat> innerList in twoDimensionalList)
+            foreach (var innerList in twoDimensionalList)
             {
                 Console.WriteLine();
                 Console.WriteLine();
