@@ -14,5 +14,6 @@ namespace SimpleTicketBookingSystem.Data
         public bool IsAvailable { get; set; } = true;
         public string? icon { get; set; } 
         public string? ForegroundColor { get; set; }
+
     }
 }

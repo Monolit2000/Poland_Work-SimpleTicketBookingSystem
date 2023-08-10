@@ -9,23 +9,22 @@ namespace SimpleTicketBookingSystem.Data
 {
     public class Reservation
     {
-
-        //⦁	Створіть клас Reservation з властивостями: Screening, Seat, CustomerName.
-
         public Screening Screening { get; set; }
         public Seat? Seat { get; set; }
         public int CustomerName { get; set; }
 
-        public Reservation(IMovie movie)
+        public Reservation(IMovie movie, ISeat seat)
         {
             Screening = new Screening(movie);
-        }
 
 
-        public Reservation(ISeat seat)
-        {
+            // movie.Seats.SeatsList.FirstOrDefault(s => s == seat).IsAvailable = false;
+
             Seat = (Seat?)seat;
             Seat.IsAvailable = false;
         }
+
+
+      
     }
 }

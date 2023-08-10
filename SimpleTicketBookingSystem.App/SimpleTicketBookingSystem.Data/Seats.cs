@@ -14,7 +14,7 @@ namespace SimpleTicketBookingSystem.Data
 
         public Seats()
         {
-            SeatsList = SeatsListAdd(10, 10);
+            SeatsList = SeatsListAdd(5, 5);
         }
 
         private List<ISeat> SeatsListAdd(int RowCount, int ColomCount)

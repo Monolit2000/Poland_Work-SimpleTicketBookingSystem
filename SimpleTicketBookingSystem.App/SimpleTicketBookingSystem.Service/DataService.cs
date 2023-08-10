@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 
 namespace SimpleTicketBookingSystem.Service
 {
+
     public class DataService : IDataService
     {
-        public IMovies Movies { get; set ; }
+        public IMovies Movies { get; set; }
 
+       // public Reservation
         public DataService()
         {
             Movies = new Movies();
@@ -22,5 +24,22 @@ namespace SimpleTicketBookingSystem.Service
         {
 
         }
+
+        public void makeTiket(List<List<ISeat>> seats)
+        {
+            foreach (var innerList in seats)
+            {
+                foreach (var seat in innerList)
+                {
+
+                    if (seat.IsAvailable is false)
+                    {
+
+                    }
+
+                }
+            }
+        }
+
     }
 }

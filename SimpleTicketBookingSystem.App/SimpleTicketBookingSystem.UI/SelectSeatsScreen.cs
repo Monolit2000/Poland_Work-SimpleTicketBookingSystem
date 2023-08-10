@@ -2,7 +2,6 @@
 using SimpleTicketBookingSystem.Data.Screen;
 using SimpleTicketBookingSystem.Enums;
 using SimpleTicketBookingSystem.Interfaces.Data;
-using SimpleTicketBookingSystem.UI.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,59 +10,53 @@ using System.Threading.Tasks;
 
 namespace SimpleTicketBookingSystem.UI
 {
-    public class SelectSeatsScreen : ScreenForCinemaHoll
+    public class SelectSeatsScreen : Screen 
     {
+        
+        public IMovie _movie { get; set; }
 
         public List<ScreenLineEntry> list = new List<ScreenLineEntry>();
 
         public override void AdditionalSection()
          {
 
-           // Console.WriteLine();
+            // Console.WriteLine();
 
-            ShowCinemaHoll();
          }
-
-        public override void AdditionalSectionForCinemaHoll()
-        {
-          // ScreenRender(list);
-        }
 
         public override void Show(IMovie movie)
         {
+
+            _movie = movie;
+
             while (true)
             {
-                twoDimensionalList.Clear();
+                var list = new List<ScreenLineEntry>();
+               //{
+               // new ScreenLineEntry { Text = "0. Exit" },
+               // new ScreenLineEntry { Text = "1. Enter" },
+               // new ScreenLineEntry { Text = "2. Create a new settings" },
+               //};
 
-                var list = new List<ScreenLineEntry>
-               {
-                new ScreenLineEntry{Text = $"{movie.Title}" },
-                new ScreenLineEntry { Text = "0. Exit" },
-                new ScreenLineEntry { Text = "1. Enter" },
-                new ScreenLineEntry { Text = "2. Create a new settings" },
-               };
-
-
-                 RowCount = 10;
-                 ColomCount = 10;
-
-                // ShowCinemaHoll();
-
-
-                if (twoDimensionalList.Count == 0)
+                foreach (var seat in movie.Seats.SeatsList)
                 {
-                    CinemaHallHandler(movie.Seats.SeatsList);
+                    list.Add(new ScreenLineEntry { Text = $"Row: {seat.Row} --- Number: {seat.Number} --- IsAvailable: {seat.IsAvailable}"});
                 }
- 
+
+
+              
+
+
+         
+
                 ScreenRender(list);
 
-                SwitchHandlerForCinemaHoll();
+            
 
                 SwitchHandler();
 
-                Switch = false;
-
                 return;
+
             }
         }
 
@@ -71,16 +64,29 @@ namespace SimpleTicketBookingSystem.UI
         {
             try
             {
-                SelectSeatsScreenChoices choice = (SelectSeatsScreenChoices)currentField;
-                switch (choice)
-                {
-                    case SelectSeatsScreenChoices.Exit:
-                        break;
 
-                    case SelectSeatsScreenChoices.Enter:
-                        break;
+
+                var resrvatuion = new Reservation(_movie, _movie.Seats.SeatsList[currentField]);
+
+                switch (currentField)
+                {
 
                 }
+
+
+                //SelectSeatsScreenChoices choice = (SelectSeatsScreenChoices)currentField;
+                //switch (choice)
+                //{
+                //    case SelectSeatsScreenChoices.Exit:
+                //        break;
+
+                //    case SelectSeatsScreenChoices.Enter:
+                //        break;
+
+                //   case SelectSeatsScreenChoices.Exit:
+                //     break;
+
+                //}
             }
              
             catch

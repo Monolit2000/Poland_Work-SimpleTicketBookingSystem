@@ -3,7 +3,6 @@ using SimpleTicketBookingSystem.Data.Screen;
 using SimpleTicketBookingSystem.Enums;
 using SimpleTicketBookingSystem.Interfaces;
 using SimpleTicketBookingSystem.Interfaces.Data;
-using SimpleTicketBookingSystem.UI.Abstract;
 
 namespace SimpleTicketBookingSystem.UI
 {
@@ -34,8 +33,8 @@ namespace SimpleTicketBookingSystem.UI
                 {
                     new ScreenLineEntry { Text = "0. Exit" },
                     new ScreenLineEntry { Text = "1. Choose a movie" },
-                    new ScreenLineEntry { Text = "1. Select seats" },
-                    new ScreenLineEntry { Text = "2. Create a new settings" },
+                    new ScreenLineEntry { Text = "2. Select seats" },
+                    new ScreenLineEntry { Text = "3. Show your ticket" },
                 };
 
 
