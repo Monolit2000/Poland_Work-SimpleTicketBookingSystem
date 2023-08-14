@@ -90,10 +90,14 @@ E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.Ap
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Data.dll
+E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Enums.dll
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Interfaces.dll
+E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Service.dll
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.UI.dll
+E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Service.pdb
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.UI.pdb
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Data.pdb
+E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Enums.pdb
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Interfaces.pdb
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\obj\Debug\net6.0\SimpleTicketBookingSystem.App.csproj.AssemblyReference.cache
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\obj\Debug\net6.0\SimpleTicketBookingSystem.App.GeneratedMSBuildEditorConfig.editorconfig
@@ -106,7 +110,3 @@ E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.Ap
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\obj\Debug\net6.0\SimpleTicketBookingSystem.App.pdb
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\obj\Debug\net6.0\SimpleTicketBookingSystem.App.genruntimeconfig.cache
 E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\obj\Debug\net6.0\ref\SimpleTicketBookingSystem.App.dll
-E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Enums.dll
-E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Enums.pdb
-E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Service.dll
-E:\Poland_App\Poland_Work-SimpleTicketBookingSystem\SimpleTicketBookingSystem.App\SimpleTicketBookingSystem.App\bin\Debug\net6.0\SimpleTicketBookingSystem.Service.pdb
